@@ -23,7 +23,7 @@ input {
 }
 
 main {
-    margin-top: 4em;
+    margin-top: 5em;
     background: url("../img/Ladder-to-Heaven.jpg") cover;
 }
 
@@ -63,7 +63,7 @@ footer span {
 }
 
 nav.navbar {
-    background: linear-gradient(#7BCBF6, #519AD1);
+    background: linear-gradient(#7BCBF6, white);
     text-transform: uppercase;
     border: 0;
     margin: 0;
@@ -137,4 +137,96 @@ header h1 {
   line-height: 200px;
   font-size: 80px;
   color: white;
+}
+
+fieldset {
+    display: flex;
+    background-color: whitesmoke;
+    padding: 1em 2em;
+    box-shadow: 0 0 10px lightgrey;
+    border: 1px solid lightgrey;
+    margin: auto;
+}
+
+input {
+    width: 100%;
+    border: 1px solid lightblue;
+    font-size: 1.5em;
+}
+
+legend {
+    font-size: 2em;
+    background-color: lightblue;
+    box-shadow: 0 0 10px lightblue;
+    border: 1px solid lightblue;
+}
+label {
+     font-size: 1.5em;
+     flex-wrap: wrap;
+}
+
+button {
+    margin-top: 1em;
+}
+
+.password-verdict {
+    display: flex;
+    margin-top: -1em;
+}
+
+.checkbox label {
+    padding: 0;
+}
+
+.checkbox input[type="checkbox"] {
+    margin-top: -1px;
+}
+
+.btn-danger {
+    margin: 0;
+    vertical-align: bottom;
+    width: 17%;
+}
+
+#hidden {
+    width: 10px;
+    height: 10px;
+    float: right;
+    margin-top: 2em;
+}
+
+@media (min-width: 768px) {
+    nav.navbar {
+        position: relative;
+    }
+
+    .navbar-brand {
+        display: none;
+    }
+
+    .nav.navbar-nav {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .nav.navbar-nav li {
+        flex-grow: 0;
+        width: auto;
+    }
+
+    header h1 {
+        display: block;
+        margin-bottom: 2em;
+    }
+
+    fieldset {
+        width: 43%;
+    }
+
+    .checkbox input[type="checkbox"] {
+        margin-left: -100px;
+        margin-top: 7px;
+    }
 }
