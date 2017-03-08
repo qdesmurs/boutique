@@ -1,46 +1,34 @@
-html {
-    width: 100%;
-    height: 100%;
-}
-
-body {
-    width: 100%;
-    font-size: 1em;
-}
-#texte {
-    margin-left: 0;
-}
-.col-xs-12 {
-    margin: 0;
-    padding: 0;
-    background-color: lightblue;
-}
-
-.col-xs-12 input, button {
-    visibility: hidden;
-}
-
 header {
-    width: 100%;
-    height: 7em;
+    text-align: center;
+}
+
+header .container {
+    padding: 0;
 }
 
 input {
     width: 7em;
 }
 
+main {
+    margin-top: 4em;
+    background: url("../img/Ladder-to-Heaven.jpg") cover;
+}
+
 img {
-    position: absolute;
     width: 100%;
 }
 
 #pq {
     width: 50%;
-    margin: 8.5em;
+    margin: auto;
+}
+
+#imgrecap {
+    width: 25%;
 }
 
 h2 {
-    position: absolute;
     text-align: center;
     font-family: 'Sacramento', cursive;
     width: 100%;
@@ -54,7 +42,63 @@ p {
     font-family: "Oswald", cursive;
     font-size: 1.2em;
     margin:0 0 3em;
-    position: fixed;
     bottom: 0;
     padding: 0 2em;
+}
+
+footer span {
+    margin: auto;
+}
+
+nav.navbar {
+    background: linear-gradient(#7BCBF6, #519AD1);
+    text-transform: uppercase;
+    border: 0;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.navbar-brand {
+    display: inline-block;
+    float:none;
+    margin-left: -2.5em;
+    font-family: "Oswald";
+    font-size: 1.5em;
+}
+
+.navbar-brand:hover {
+    color: white;
+}
+
+.navbar-toggle {
+    float: left;
+}
+
+.nav.navbar-nav {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+}
+
+.nav.navbar-nav li {
+    flex-grow: 1;
+    width: 100%;
+}
+
+nav a {
+    color: white;
+    font-family: "Abel", sans-serif;
+    font-size: 1.2em;
+}
+
+nav span {
+    color: white;
+}
+
+header h1 {
+    font-family: "Oswald";
+    display: none;
 }
