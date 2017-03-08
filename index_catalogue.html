@@ -15,34 +15,61 @@
 
 <body>
     <header>
+        <div class="container">
+            <h1>PQ.com</h1>
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">PQ.com</a>
+                        <button type="button" name="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+                    <span class="sr-only"></span>
+                    <span class="glyphicon glyphicon-menu-hamburger"></span>
+                </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="menu">
 
+                        <ul class="nav navbar-nav">
+                            <li><a href="#">homepage</a></li>
+                            <li><a href="#">Catalogue</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Panier</a></li>
+                            <li><a href="#">Contacts</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
     <main>
         <div class="row">
-            <div class="col-xs-12">
+            <div class="col-xs-10 md">
                 <div class="carousel" data-flickity='{ "freeScroll": true }'>
-                    <img src="./static/img/economique.jpg" alt="" class="img-responsive">
-                    <img src="./static/img/pack.jpg" alt="" class="img-responsive">
-                    <img src="./static/img/night.jpg" alt="" class="img-responsive">
+                    <img src="./static/img/economique.jpg" alt="" class="img-responsive slide">
+                    <img src="./static/img/pack.jpg" alt="" class="img-responsive slide">
+                    <img src="./static/img/night.jpg" alt="" class="img-responsive slide">
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-xs-12">
                 <article class="">
-
+                    <h3>Le Pack Economique</h3>
+                    <img src="./static/img/economique.jpg" alt="">
+                    <p>Parfait pour les petites bourses, avec son edition "trés limité", vous n'aurez plus à vous soucier de savoir si le rouleau est terminé ! (livré sans emballage)</p>
                 </article>
             </div>
             <div class="col-xs-12">
                 <article class="">
-                    <img src="" alt="">
-                    <h3></h3>
-                    <p></p>
+                    <h3>Le Pack famille</h3>
+                    <img src="./static/img/pack.jpg" alt="">
+                    <p>Pour les familles nombreuses, pour qui la consommation en lot est une necessité, voici le "Pack Famille" livré dans un superbe ecrin de plastique transparent, il saura réjouir petits et grand, pour un moment convivial et d'échange.</p>
                 </article>
             </div>
             <div class="col-xs-12">
                 <article class="">
-
+                    <h3>Le Pack Noctambule</h3>
+                    <img src="./static/img/night.jpg" alt="">
+                    <p>Idéal pour ceux qui ont une ampoule cassé, ou les impatients qui ne prennent pas le temps d'appuyer sur l'interrupteur, le "Pack Noctambule" est l'aboutissement d'une longue recherche de pointe. (Fonctionne sans pile)</p>
                 </article>
             </div>
         </div>
@@ -53,7 +80,7 @@
 </body>
 <script rel="stylesheet" src="./static/external/jquery/dist/jquery.min.js"></script>
 <script src="./static/external/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="static/external/flickity/dist/flickity.pkgd.min.js"></script>
+<script src="./static/external/flickity/dist/flickity.pkgd.min.js"></script>
 <script src="./static/js/script.js"></script>
 
 </html>
