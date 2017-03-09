@@ -7,12 +7,12 @@ $(document).ready(function() {
     });
 
     var section = $("#produit")
-
+    var section2 = $("#produit2")
+    var nb = Math.floor(Math.random()*10)
     for (var i in catalog) {
         // for (var j = 0; j < pictures.length; j++) {
         //
         // }
-        console.log(catalog[0]);
         var article = $("<article class=col-md-3 item></article>")
         var vignette = $("<img src=" + catalog[i].thumb + ">")
         var nom = $("<h3>" + catalog[i].name + "</h3>");
@@ -24,7 +24,7 @@ $(document).ready(function() {
 
         article.append(nom, vignette, descr, prix, quant)
         section.append(article)
-    }
 
+    }
 
 });
