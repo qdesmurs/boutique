@@ -257,4 +257,8 @@ button {
     #sliders {
         margin-top: -4em;
     }
+
+    #produit3 {
+        display: block;
+    }
 }

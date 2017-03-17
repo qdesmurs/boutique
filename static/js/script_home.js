@@ -1,6 +1,5 @@
 $(document).ready(function() {
 
-    var section = $("#produit")
     var section2 = $("#produit2")
     for (var i = 0; i < 3; i++) {
 
