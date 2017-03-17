@@ -6,30 +6,26 @@ $(document).ready(function() {
         contain: true
     });
 
-    var GET_PARAM = function(name) {
-    return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [null, ''])[1].replace(/\+/g, '%20')) || null;
-    };
-    console.log(GET_PARAM("nom"));
-    console.log(GET_PARAM("prenom"));
+    $.ajax({
+        url: 'https://codi-e-commerce.herokuapp.com/',
+        type: 'GET',
+        dataType: 'json',
+        success: function(objects, status) {
 
-    var section = $("#container")
+            var section = $("#container")
 
-    for (var i in catalog) {
-        // for (var j = 0; j < pictures.length; j++) {
-        //
-        // }
-        var article = $("<article class=col-md-3 item></article>")
-        var vignette = $("<a href=product.html?index="+i+"><img src=" + catalog[i].thumb + "></a>")
-        var nom = $("<h3>" + catalog[i].name + "</h3>");
-        var descr = $("<p>" + catalog[i].description + "</p>")
-        var prix = $("<p>" + "prix : " + catalog[i].price + "€" + "</p>")
-        // var quant = $("<input type=number value=" + catalog[i].quantity + ">")
-        // var pict = $("<img src="+catalog[i].pictures+" class='img-responsive'>")
+            for (var i in objects) {
 
+                var article = $("<article class=col-md-3 item></article>")
+                var vignette = $("<a href=product.html?index=" + i + "><img src=" + objects[i].thumb + "></a>")
+                var nom = $("<h3>" + objects[i].name + "</h3>");
+                var descr = $("<p>" + objects[i].description + "</p>")
+                var prix = $("<p>" + "prix : " + objects[i].price + "€" + "</p>")
 
-        article.append(nom, vignette, descr, prix)
-        section.append(article)
+                article.append(nom, vignette, descr, prix)
+                section.append(article)
 
-    }
-
+            }
+        }
+    });
 });
